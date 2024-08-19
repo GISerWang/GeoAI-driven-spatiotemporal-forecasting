@@ -1,1 +1,1 @@
-# GeoAI-driven-spatiotemporal-forecasting
+# GeoAI-driven spatiotemporal forecasting
