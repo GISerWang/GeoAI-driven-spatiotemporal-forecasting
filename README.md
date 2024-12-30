@@ -20,30 +20,30 @@
 
 ### 2.1 Modeling Temporal Dependence(建模时间依赖关系的基础神经网络算子)
 
-* [Operator[RNN]v1.py](ModelingTemporalDependence%2FOperator%5BRNN%5Dv1.py): 利用PyTorch底层函数自定义线性变换运算，实现**经典循环神经网络算子(RNN算子)**
-* [Operator[RNN]v2.py](ModelingTemporalDependence%2FOperator%5BRNN%5Dv2.py): 利用PyTorch自带的nn.Linear()类完成线性变换运算，实现**经典循环神经网络算子(RNN算子)**
-* [Operator[RNN]v3.py](ModelingTemporalDependence%2FOperator%5BRNN%5Dv3.py): 利用PyTorch自带的F.linear()函数完成线性变换运算，实现**经典循环神经网络算子(RNN算子)**
-* [Operator[GRU].py](ModelingTemporalDependence%2FOperator%5BGRU%5D.py): 利用PyTorch自带的nn.Linear()类实现**门控循环单元算子(GRU算子)**
-* [Operator[LSTM].py](ModelingTemporalDependence%2FOperator%5BLSTM%5D.py): 利用PyTorch自带的nn.Linear()类实现**长短时记忆网络算子(LSTM算子)**
-* [Operator[1DCNN]v1.py](ModelingTemporalDependence%2FOperator%5B1DCNN%5Dv1.py): 利用PyTorch自带的nn.Conv1d()类实现**一维卷积神经网络算子(1DCNN算子)**
-* [Operator[1DCNN]v2.py](ModelingTemporalDependence%2FOperator%5B1DCNN%5Dv2.py): 利用PyTorch自带的F.conv1d()函数**一维卷积神经网络算子(1DCNN算子)**
-* [Operator[CausalCN].py](ModelingTemporalDependence%2FOperator%5BCausalCN%5D.py): 利用PyTorch自带的nn.Conv1d()类和padding参数**因果卷积神经网络算子(CausalCN算子)**
-* [Operator[CausalDCN]v1.py](ModelingTemporalDependence%2FOperator%5BCausalDCN%5Dv1.py): 利用PyTorch自带的nn.Conv1d()类、padding和dilation参数实现**因果膨胀卷积神经网络算子(CausalDCN算子)**
-* [Operator[CausalDCN]v2.py](ModelingTemporalDependence%2FOperator%5BCausalDCN%5Dv2.py): 利用PyTorch自带的F.conv1d()类、padding和dilation参数实现**因果膨胀卷积神经网络算子(CausalDCN算子)**
-* [Operator[TAtten].py](ModelingTemporalDependence%2FOperator%5BTAtten%5D.py): 利用PyTorch底层函数实现**时间注意力算子(TAtten算子)**
+* [Operator[RNN]v1](ModelingTemporalDependence%2FOperator%5BRNN%5Dv1.py): 利用PyTorch底层函数自定义线性变换运算，实现**经典循环神经网络算子(RNN算子)**
+* [Operator[RNN]v2](ModelingTemporalDependence%2FOperator%5BRNN%5Dv2.py): 利用PyTorch自带的nn.Linear()类完成线性变换运算，实现**经典循环神经网络算子(RNN算子)**
+* [Operator[RNN]v3](ModelingTemporalDependence%2FOperator%5BRNN%5Dv3.py): 利用PyTorch自带的F.linear()函数完成线性变换运算，实现**经典循环神经网络算子(RNN算子)**
+* [Operator[GRU]](ModelingTemporalDependence%2FOperator%5BGRU%5D.py): 利用PyTorch自带的nn.Linear()类实现**门控循环单元算子(GRU算子)**
+* [Operator[LSTM]](ModelingTemporalDependence%2FOperator%5BLSTM%5D.py): 利用PyTorch自带的nn.Linear()类实现**长短时记忆网络算子(LSTM算子)**
+* [Operator[1DCNN]v1](ModelingTemporalDependence%2FOperator%5B1DCNN%5Dv1.py): 利用PyTorch自带的nn.Conv1d()类实现**一维卷积神经网络算子(1DCNN算子)**
+* [Operator[1DCNN]v2](ModelingTemporalDependence%2FOperator%5B1DCNN%5Dv2.py): 利用PyTorch自带的F.conv1d()函数**一维卷积神经网络算子(1DCNN算子)**
+* [Operator[CausalCN]](ModelingTemporalDependence%2FOperator%5BCausalCN%5D.py): 利用PyTorch自带的nn.Conv1d()类和padding参数**因果卷积神经网络算子(CausalCN算子)**
+* [Operator[CausalDCN]v1](ModelingTemporalDependence%2FOperator%5BCausalDCN%5Dv1.py): 利用PyTorch自带的nn.Conv1d()类、padding和dilation参数实现**因果膨胀卷积神经网络算子(CausalDCN算子)**
+* [Operator[CausalDCN]v2](ModelingTemporalDependence%2FOperator%5BCausalDCN%5Dv2.py): 利用PyTorch自带的F.conv1d()类、padding和dilation参数实现**因果膨胀卷积神经网络算子(CausalDCN算子)**
+* [Operator[TAtten]](ModelingTemporalDependence%2FOperator%5BTAtten%5D.py): 利用PyTorch底层函数实现**时间注意力算子(TAtten算子)**
 ### 2.2 Modeling Spatial Dependence(建模空间依赖关系的基础神经网络算子)
-* [Operator[2DCNN]v1.py](ModelingSpatialDependence%2FOperator%5B2DCNN%5Dv1.py): 利用PyTorch自带的nn.Conv2d()类实现**二维卷积神经网络算子(2DCNN算子)**
-* [Operator[2DCNN]v2.py](ModelingSpatialDependence%2FOperator%5B2DCNN%5Dv2.py): 利用PyTorch自带的F.conv2d()函数实现**二维卷积神经网络算子(2DCNN算子)**
-* [Operator[2DDCNN].py](ModelingSpatialDependence%2FOperator%5B2DDCNN%5D.py): 利用PyTorch自带的F.conv2d()函数、padding和dilation参数实现**二维膨胀卷积神经网络算子(2DDCNN算子)**
-* [Operator[SAtten].py](ModelingSpatialDependence%2FOperator%5BSAtten%5D.py): 利用PyTorch底层函数实现**空间注意力算子(SAtten算子)**
-* [Operator[GAT].py](ModelingSpatialDependence%2FOperator%5BGAT%5D.py): 利用PyTorch底层函数实现**图注意力算子(GAT算子)**
-* [Operator[SpatialGCN].py](ModelingSpatialDependence%2FOperator%5BSpatialGCN%5D.py): 利用PyTorch底层函数实现**空间图卷积神经网络算子(SpatialGCN算子)**
+* [Operator[2DCNN]v1](ModelingSpatialDependence%2FOperator%5B2DCNN%5Dv1.py): 利用PyTorch自带的nn.Conv2d()类实现**二维卷积神经网络算子(2DCNN算子)**
+* [Operator[2DCNN]v2](ModelingSpatialDependence%2FOperator%5B2DCNN%5Dv2.py): 利用PyTorch自带的F.conv2d()函数实现**二维卷积神经网络算子(2DCNN算子)**
+* [Operator[2DDCNN]](ModelingSpatialDependence%2FOperator%5B2DDCNN%5D.py): 利用PyTorch自带的F.conv2d()函数、padding和dilation参数实现**二维膨胀卷积神经网络算子(2DDCNN算子)**
+* [Operator[SAtten]](ModelingSpatialDependence%2FOperator%5BSAtten%5D.py): 利用PyTorch底层函数实现**空间注意力算子(SAtten算子)**
+* [Operator[GAT]](ModelingSpatialDependence%2FOperator%5BGAT%5D.py): 利用PyTorch底层函数实现**图注意力算子(GAT算子)**
+* [Operator[SpatialGCN]](ModelingSpatialDependence%2FOperator%5BSpatialGCN%5D.py): 利用PyTorch底层函数实现**空间图卷积神经网络算子(SpatialGCN算子)**
 ### 2.3 Modeling Spatiotemporal Dependence(建模时空依赖关系的基础神经网络算子)
-* [Operator[ConvGRU].py](ModelingSpatiotemporalDependence%2FOperator%5BConvGRU%5D.py): 利用PyTorch自带的nn.Conv2d()类替换经典GRU算子中的线性变换实现**卷积门控循环单元算子(ConvGRU算子)**
-* [Operator[ConvLSTM].py](ModelingSpatiotemporalDependence%2FOperator%5BConvLSTM%5D.py): 利用PyTorch自带的nn.Conv2d()类替换经典LSTM算子中的线性变换实现**卷积长短时记忆网络算子(ConvLSTM算子)**
-* [Operator[3DCNN]v1.py](ModelingSpatiotemporalDependence%2FOperator%5B3DCNN%5Dv1.py): 利用PyTorch自带的nn.Conv3d()类实现**三维卷积神经网络算子(3DCNN算子)**
-* [Operator[3DCNN]v2.py](ModelingSpatiotemporalDependence%2FOperator%5B3DCNN%5Dv2.py): 利用PyTorch自带的F.conv3d()函数实现**三维卷积神经网络算子(3DCNN算子)**
-* [Operator[STCNN].py](ModelingSpatiotemporalDependence%2FOperator%5BSTCNN%5D.py): 利用PyTorch自带的nn.Conv3d()类和padding参数实现**时空卷积神经网络算子(STCNN算子)**
-* [Operator[STDCNN].py](ModelingSpatiotemporalDependence%2FOperator%5BSTDCNN%5D.py): 利用PyTorch自带的nn.Conv3d()类、padding和dilation参数实现**时空膨胀卷积神经网络算子(STDCNN算子)**
-* [Operator[ParallelBlock].py](ModelingSpatiotemporalDependence%2FOperator%5BParallelBlock%5D.py): 时间维度采用CausalCN算子、空间维度采用SAtten算子，实现**时空并联块**
-* [Operator[SerialBlock].py](ModelingSpatiotemporalDependence%2FOperator%5BSerialBlock%5D.py): 时间维度采用CausalCN算子、空间维度采用SAtten算子，实现**时空串联块**
+* [Operator[ConvGRU]](ModelingSpatiotemporalDependence%2FOperator%5BConvGRU%5D.py): 利用PyTorch自带的nn.Conv2d()类替换经典GRU算子中的线性变换实现**卷积门控循环单元算子(ConvGRU算子)**
+* [Operator[ConvLSTM]](ModelingSpatiotemporalDependence%2FOperator%5BConvLSTM%5D.py): 利用PyTorch自带的nn.Conv2d()类替换经典LSTM算子中的线性变换实现**卷积长短时记忆网络算子(ConvLSTM算子)**
+* [Operator[3DCNN]v1](ModelingSpatiotemporalDependence%2FOperator%5B3DCNN%5Dv1.py): 利用PyTorch自带的nn.Conv3d()类实现**三维卷积神经网络算子(3DCNN算子)**
+* [Operator[3DCNN]v2](ModelingSpatiotemporalDependence%2FOperator%5B3DCNN%5Dv2.py): 利用PyTorch自带的F.conv3d()函数实现**三维卷积神经网络算子(3DCNN算子)**
+* [Operator[STCNN]](ModelingSpatiotemporalDependence%2FOperator%5BSTCNN%5D.py): 利用PyTorch自带的nn.Conv3d()类和padding参数实现**时空卷积神经网络算子(STCNN算子)**
+* [Operator[STDCNN]](ModelingSpatiotemporalDependence%2FOperator%5BSTDCNN%5D.py): 利用PyTorch自带的nn.Conv3d()类、padding和dilation参数实现**时空膨胀卷积神经网络算子(STDCNN算子)**
+* [Operator[ParallelBlock]](ModelingSpatiotemporalDependence%2FOperator%5BParallelBlock%5D.py): 时间维度采用CausalCN算子、空间维度采用SAtten算子，实现**时空并联块**
+* [Operator[SerialBlock]](ModelingSpatiotemporalDependence%2FOperator%5BSerialBlock%5D.py): 时间维度采用CausalCN算子、空间维度采用SAtten算子，实现**时空串联块**
