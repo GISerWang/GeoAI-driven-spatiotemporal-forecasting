@@ -20,15 +20,15 @@
 
 ### 2.1 Modeling Temporal Dependence(建模时间依赖关系的基础神经网络算子)
 
-* Operator[RNN]v1: 
-* Operator[RNN]v2: 
-* Operator[RNN]v3: 
-* Operator[GRU]: 
-* Operator[LSTM]: 
-* Operator[1DCNN]v1: 
-* Operator[1DCNN]v2: 
-* Operator[CausalCN]: 
-* Operator[CausalDCN]v1: 
+* Operator[RNN]v1: 利用PyTorch底层函数自定义实现**经典循环神经网络算子(RNN算子)**中的线性变化
+* Operator[RNN]v2: 利用PyTorch自带的nn.Linear()类实现**经典循环神经网络算子(RNN算子)**中的线性变化
+* Operator[RNN]v3: 利用PyTorch自带的F.linear()函数实现**经典循环神经网络算子(RNN算子)**中的线性变化
+* Operator[GRU]: 利用PyTorch自带的nn.Linear()类实现**GRU算子**
+* Operator[LSTM]: 利用PyTorch自带的nn.Linear()类实现**LSTM算子**
+* Operator[1DCNN]v1: 利用PyTorch自带的nn.Conv1d()类实现**一维卷积神经网络算子**
+* Operator[1DCNN]v2: 利用PyTorch自带的F.conv1d()函数**一维卷积神经网络算子**
+* Operator[CausalCN]: 利用PyTorch自带的nn.Conv1d()类和padding参数**因果卷积神经网络算子**
+* Operator[CausalDCN]v1: 利用PyTorch自带的nn.Conv1d()类、padding和dilation参数实现**因果膨胀卷积神经网络算子**
 * Operator[CausalDCN]v2: 
 * Operator[TAtten]: 
 ### 2.2 Modeling Spatial Dependence(建模空间依赖关系的基础神经网络算子)
