@@ -7,14 +7,14 @@
 * Pytorch Version: 1.8.0
 
 ### 1.2 超参数命名
-* batch_size
-* num_of_nodes
-* num_of_timesteps
-* in_channels
-* hidden_channels 
-* num_of_headers 
-* kernel_sizes 
-* multi_steps
+* batch_size：批处理的大小
+* num_of_nodes：图节点的数量
+* num_of_timesteps：时间依赖步长
+* in_channels：输入数据的特征数量
+* hidden_channels：隐藏层的维度 
+* num_of_headers: 多头注意力中“头”的个数
+* kernel_sizes: 卷积核的大小
+* multi_steps：预测步长
 
 ## 2. 基础神经网络算子
 
