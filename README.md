@@ -23,7 +23,7 @@
 * Operator[RNN]v1: 利用PyTorch底层函数自定义线性变换运算，实现**经典循环神经网络算子(RNN算子)**
 * Operator[RNN]v2: 利用PyTorch自带的nn.Linear()类完成线性变换运算，实现**经典循环神经网络算子(RNN算子)**
 * Operator[RNN]v3: 利用PyTorch自带的F.linear()函数完成线性变换运算，实现**经典循环神经网络算子(RNN算子)**
-* Operator[GRU]: 利用PyTorch自带的nn.Linear()类实现**循环记忆单元算子(GRU算子)**
+* Operator[GRU]: 利用PyTorch自带的nn.Linear()类实现**门控循环单元算子(GRU算子)**
 * Operator[LSTM]: 利用PyTorch自带的nn.Linear()类实现**长短时记忆网络算子(LSTM算子)**
 * Operator[1DCNN]v1: 利用PyTorch自带的nn.Conv1d()类实现**一维卷积神经网络算子(1DCNN算子)**
 * Operator[1DCNN]v2: 利用PyTorch自带的F.conv1d()函数**一维卷积神经网络算子(1DCNN算子)**
@@ -39,9 +39,11 @@
 * Operator[GAT]: 利用PyTorch底层函数实现**图注意力算子(GAT算子)**
 * Operator[SpatialGCN]: 利用PyTorch底层函数实现**空间图卷积神经网络算子(SpatialGCN算子)**
 ### 2.3 Modeling Spatiotemporal Dependence(建模时空依赖关系的基础神经网络算子)
-* Operator[ConvGRU]: 
-* Operator[ConvLSTM]:
-* Operator[3DCNN]v1:
-* Operator[3DCNN]v2:
-* Operator[STCNN]:
-* Operator[STDCNN]:
+* Operator[ConvGRU]: 利用PyTorch自带的nn.Conv2d()类替换经典GRU算子中的线性变换实现**卷积门控循环单元算子(ConvGRU算子)**
+* Operator[ConvLSTM]: 利用PyTorch自带的nn.Conv2d()类替换经典LSTM算子中的线性变换实现**卷积长短时记忆网络算子(ConvLSTM算子)**
+* Operator[3DCNN]v1: 利用PyTorch自带的nn.Conv3d()类实现**三维卷积神经网络算子(3DCNN算子)**
+* Operator[3DCNN]v2: 利用PyTorch自带的F.conv3d()函数实现**三维卷积神经网络算子(3DCNN算子)**
+* Operator[STCNN]: 利用PyTorch自带的nn.Conv3d()类和padding参数实现**时空卷积神经网络算子(STCNN算子)**
+* Operator[STDCNN]: 利用PyTorch自带的nn.Conv3d()类、padding和dilation参数实现**时空膨胀卷积神经网络算子(STDCNN算子)**
+* Operator[ParallelBlock]: 时间维度采用CausalCN算子、空间维度采用SAtten算子，实现**时空并联块**
+* Operator[SerialBlock]: 时间维度采用CausalCN算子、空间维度采用SAtten算子，实现**时空串联块**
